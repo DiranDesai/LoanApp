@@ -11,6 +11,7 @@ export const USER_PROPERTY_SUCCESS = "USER_PROPERTY_SUCCESS";
 export const UPDATE_TOKEN = "UPDATE_TOKEN";
 export const LOGOUT = "LOGOUT";
 export const RESET = "RESET";
+export const LOGIN_ERROR = "LOGIN_ERROR"
 
 export const RESET_LOGIN_ERROR = "RESET_LOGIN_ERROR";
 

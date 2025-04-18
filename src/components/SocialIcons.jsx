@@ -5,7 +5,7 @@ import phone from "../assets/phone.png";
 
 function SocialIcons() {
   return (
-    <div className="flex justify-center items-center mt-4 space-x-7 mt-10">
+    <div className="flex social-login justify-center items-center mt-4 space-x-7 mt-10">
     <div className="bg-white p-5 shadow-md w-15 rounded-full h-15">
       <img src={google} className="" alt="" />
     </div>

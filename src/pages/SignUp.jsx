@@ -6,7 +6,7 @@ import SocialIcons from "../components/SocialIcons";
 
 function SignUp() {
   return (
-    <div className="signup px-4 py-2">
+    <div className="signup lg:max-w-[500px] mx-auto mt-10  px-4 py-2">
       <div className="flex flex-col justify-center items-center">
         <img src={logo} alt="" />
       </div>
@@ -17,7 +17,7 @@ function SignUp() {
           </label>
           <input
             type="text"
-            className="w-full shadow-sm mt-2 px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"
+            className="w-full rounded-md shadow-sm mt-2 px-4 py-3 border border-gray-300 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"
           />
         </div>
         <div className="mt-5">
@@ -26,7 +26,7 @@ function SignUp() {
           </label>
           <input
             type="text"
-            className="w-full shadow-sm mt-2 px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"
+            className="w-full rounded-md shadow-sm mt-2 px-4 py-3 border border-gray-300 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"
           />
         </div>
         <div className="mt-5">
@@ -35,7 +35,7 @@ function SignUp() {
           </label>
           <input
             type="text"
-            className="w-full shadow-sm mt-2 px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"
+            className="w-full rounded-md shadow-sm mt-2 px-4 py-3 border border-gray-300 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"
           />
         </div>
         <div className="mt-5">
@@ -44,10 +44,10 @@ function SignUp() {
           </label>
           <input
             type="password"
-            className="w-full shadow-sm mt-2 px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"
+            className="w-full rounded-md shadow-sm mt-2 px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"
           />
         </div>
-        <button type="button" className="w-full mt-10 text-white bg-blue-500 p-2 rounded-sm hover:bg-blue-600 transition duration-200 ease-in-out">
+        <button type="button" className="w-full mt-10 p-3 text-white bg-[#ffac26] font-bold p-2 rounded-md hover:bg-[tomato] transition duration-200 ease-in-out">
           Signup
         </button>
       </form>

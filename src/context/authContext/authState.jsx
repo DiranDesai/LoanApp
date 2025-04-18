@@ -1,13 +1,14 @@
 import { Children, useReducer } from "react";
 import authReducer from "./authReducer";
 import authContext from "./authContext";
-import { USER_LOGIN_SUCCESS } from "../../types";
+import { LOADING, LOGIN_ERROR, USER_LOGIN_SUCCESS } from "../../types";
+import { API_ENDPOINT } from "../../constants";
 
 
 const AuthState = ({children}) => {
 
     const initialState = {
-        user: null,
+        user: {name: "diran"},
         loading: false,
         token: null,
         error: null
@@ -33,9 +34,11 @@ const AuthState = ({children}) => {
         const formData = new URLSearchParams()
         formData.append("username", userData.username)
         formData.append("password", userData.password)
+
+        console.log(userData)
       
         try {
-            
+            dispatch({type: LOADING})
             const response = await fetch(`${API_ENDPOINT}/token`, {
                 method: "POST",
                 headers: {
@@ -43,11 +46,20 @@ const AuthState = ({children}) => {
                 },
                 body: formData
               })
+
+              if (!response.ok) {
+                const errorData = await response.json();
+                console.error("Login error:", errorData.message); // Should log "Invalid credentials"
+                dispatch({type: LOGIN_ERROR, payload: errorData.message})
+                return;
+              }
             
               const {access_token} = await response.json()
+              console.log(access_token)
               dispatch({type: USER_LOGIN_SUCCESS, payload: access_token})
+              return true
         } catch (error) {
-            
+            console.log(error)
         }
       
     

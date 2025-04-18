@@ -1,4 +1,4 @@
-import { LOADING, USER_LOGIN_SUCCESS } from "../../types";
+import { LOADING, LOGIN_ERROR, USER_LOGIN_SUCCESS } from "../../types";
 
 
 const authReducer = (state, action) => {
@@ -7,7 +7,11 @@ const authReducer = (state, action) => {
             return {...state, loading: true}
             break;
         case USER_LOGIN_SUCCESS:
-            return {...state, token: action.payload}
+            return {...state, token: action.payload, loading: false}
+        case LOGIN_ERROR:
+            return {...state, loading: false, error: action.payload}
+        case LOGIN_ERROR:
+            return {...state, loading: false, error: null}
         default:
             break;
     }
