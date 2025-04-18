@@ -1,7 +1,6 @@
 import React from 'react'
 import {CheckBadgeIcon, LockClosedIcon, UserGroupIcon, InformationCircleIcon, ShoppingBagIcon, CalendarDaysIcon, PencilSquareIcon, ArrowRightOnRectangleIcon  } from '@heroicons/react/24/outline';
 import { useNavigate } from 'react-router-dom'
-import TopBar from '../components/TopBar'
 import profilePic from '../assets/profile.avif'
 import ProfileMenu from '../components/ProfileMenu';
 import BottomNavigation from '../components/BottomNavigation';
@@ -15,11 +14,9 @@ function Profile() {
 
   return (
     <>
-      <div className="px-4 profile-page max-w-[700px] rounded-md mx-auto mt-5 py-2">
-        <TopBar />
+      <div className="px-2 profile-page max-w-[700px] rounded-md mx-auto mt-5 pt-2 pb-8">
         <div className="flex justify-center items-center mt-4">
             <div className="flex flex-col justify-center items-center space-y-1">
-                <h2 className="text-xl font-[500]">My profile</h2>
                <div className="relative">
                 <img src={profilePic} className="w-[120px] h-[120px] object-cover mt-5 rounded-full" alt="" />
                 <PencilSquareIcon className="h-7 w-7 font-bold bg-blue-400 text-white rounded-full p-2 hover:bg-red absolute right-0 top-5" />
