@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import TopBar from '../components/TopBar'
 import profilePic from '../assets/profile.avif'
 import ProfileMenu from '../components/ProfileMenu';
+import BottomNavigation from '../components/BottomNavigation';
 
 function Profile() {
   const navigate = useNavigate()
@@ -13,7 +14,8 @@ function Profile() {
   }
 
   return (
-    <div className="px-4 profile-page max-w-[700px] rounded-md mx-auto mt-5 py-2">
+    <>
+      <div className="px-4 profile-page max-w-[700px] rounded-md mx-auto mt-5 py-2">
         <TopBar />
         <div className="flex justify-center items-center mt-4">
             <div className="flex flex-col justify-center items-center space-y-1">
@@ -35,6 +37,8 @@ function Profile() {
         <ProfileMenu Icon={<ShoppingBagIcon />} title="Online services"/>
         <button className="bg-red-400 text-white p-4 rounded-md w-full my-10 flex justify-center gap-3 font-bold" onClick={handleSignOut}>Logout <ArrowRightOnRectangleIcon className="h-6 w-6 text-white" /></button>
     </div>
+    <BottomNavigation />
+    </>
   )
 }
 
