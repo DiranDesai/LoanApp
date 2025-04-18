@@ -11,8 +11,8 @@ import {
         <div className="flex justify-around items-center py-2">
           <NavItem icon={<HomeIcon className="h-6 w-6" />} label="Home" />
           <NavItem icon={<BanknotesIcon className="h-6 w-6" />} label="Get Loan" />
-          <NavItem icon={<UserCircleIcon className="h-6 w-6" />} label="Profile" />
           <NavItem icon={<ClipboardDocumentListIcon className="h-6 w-6" />} label="Loan Profile" />
+          <NavItem icon={<UserCircleIcon className="h-6 w-6" />} label="Profile" />
         </div>
       </div>
     );
