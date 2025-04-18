@@ -6,7 +6,7 @@ function NotifyDialog({message}) {
     const {dispatch} = useAuth()
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-5">
     <div className="bg-white w-full max-w-md p-6 rounded-lg shadow-lg relative">
       <h2 className="text-xl font-bold text-red-600 mb-4">Error</h2>
       <p className="text-gray-700 mb-6">{message}</p>
