@@ -10,7 +10,7 @@ const AuthState = ({children}) => {
     const initialState = {
         user: {name: "diran"},
         loading: false,
-        token: null,
+        token: 1234252,
         error: null
     };
 
