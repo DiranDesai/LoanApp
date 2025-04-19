@@ -67,4 +67,18 @@
 }
 
 
+.loan-banner{
+  background: linear-gradient(45deg, #007eff, #0b303f);
+  margin-top: 30px;
+}
+
+.loan-item .icon{
+  background: linear-gradient(45deg, black, transparent);
+}
+
+.loan-options{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 10px;
+  border-radius: 5px;
+}
 

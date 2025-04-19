@@ -14,7 +14,7 @@ function Profile() {
 
   return (
     <>
-      <div className="px-2 profile-page max-w-[700px] rounded-md mx-auto mt-5 pt-2 pb-8">
+      <div className="px-2 profile-page max-w-[700px] rounded-md mx-auto pt-2 pb-8">
         <div className="flex justify-center items-center mt-4">
             <div className="flex flex-col justify-center items-center space-y-1">
                <div className="relative">
