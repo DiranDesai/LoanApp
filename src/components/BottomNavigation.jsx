@@ -12,7 +12,7 @@ import { Link, useLocation } from "react-router-dom";
 
     const navItems = [
       { to: "/", label: "Home", icon: HomeIcon },
-      { to: "/loan", label: "Get Loan", icon: BanknotesIcon },
+      { to: "/apply", label: "Get Loan", icon: BanknotesIcon },
       { to: "/loan-profile", label: "Loan Profile", icon: ClipboardDocumentListIcon },
       { to: "/profile", label: "Profile", icon: UserCircleIcon },
     ];
