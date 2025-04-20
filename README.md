@@ -1,12 +1,75 @@
-# React + Vite
+📘 LoanApp Documentation
+Overview
+LoanApp is a React-based web application that facilitates loan management for users. It offers functionalities such as applying for loans, tracking repayments, and viewing transaction histories. The application emphasizes a clean user interface and responsive design to ensure a seamless user experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔧 Features
+User Dashboard: Personalized greetings and overview of loan details.
 
-Currently, two official plugins are available:
+Loan Application: Users can apply for new loans with ease.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Repayment Tracking: Monitor loan repayments and view installment schedules.
 
-## Expanding the ESLint configuration
+Transaction History: Access a detailed history of all loan-related transactions.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Responsive Design: Optimized for various screen sizes and devices.
+
+🛠️ Tech Stack
+Frontend:
+
+React
+
+Vite
+
+Tailwind CSS
+
+Tooling:
+
+ESLint for code linting
+
+PostCSS for CSS transformations
+
+🚀 Getting Started
+Prerequisites
+Ensure you have the following installed:
+
+Node.js (v14 or higher)
+
+npm or Yarn
+
+Installation
+Clone the Repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/DiranDesai/LoanApp.git
+cd LoanApp
+Install Dependencies:
+
+Using npm:
+
+bash
+Copy
+Edit
+npm install
+Or using Yarn:
+
+bash
+Copy
+Edit
+yarn install
+Start the Development Server:
+
+Using npm:
+
+bash
+Copy
+Edit
+npm run dev
+Or using Yarn:
+
+bash
+Copy
+Edit
+yarn dev
+The application will be available at http://localhost:5173/ by default.
