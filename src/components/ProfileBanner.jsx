@@ -14,8 +14,8 @@ function ProfileBanner() {
         </Link>
         <div>
           <p className="text-[#6f7b87]">Happy Monday!</p>
-          <h2 className="font-bold text-2xl text-[rgb(41,51,63)]">
-            Hello Diran
+          <h2 className="font-medium text-xl text-[rgb(41,51,63)]">
+            Choolwe Sosala
           </h2>
         </div>
       </div>
