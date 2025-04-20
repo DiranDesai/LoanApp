@@ -14,10 +14,13 @@ function LoanItem({name, icon: Icon}){
 
 function LoanOptions() {
   return (
-    <div className="mt-10 loan-options flex justify-between">
+    <div className="mt-7">
+        <h2 className="font-bold mb-2">Quick Actions</h2>
+        <div className="loan-options flex justify-between">
         <LoanItem name="Repay" icon={CalendarDaysIcon} />
         <LoanItem name="Installements" icon={EnvelopeOpenIcon} />
         <LoanItem name="Transactions" icon={CurrencyDollarIcon} />
+        </div>
     </div>
   )
 }
