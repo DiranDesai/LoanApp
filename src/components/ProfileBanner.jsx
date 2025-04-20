@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import admin from "../assets/admin.jpg";
+import admin from "../assets/fr-03.jpg";
 import user1 from "../assets/user1.png";
+
 import { BellAlertIcon } from "@heroicons/react/24/outline";
 
 function ProfileBanner() {
@@ -9,7 +10,7 @@ function ProfileBanner() {
     <div className="flex items-center justify-between">
       <div className="flex items-center justify-between">
         <Link to="/profile">
-          <img src={user1} className="rounded-full w-[60px] h-[60px]" alt="" />
+          <img src={admin} className="rounded-full user-avatar w-[60px] h-[60px]" alt="" />
         </Link>
         <div>
           <p className="text-[#6f7b87]">Happy Monday!</p>
