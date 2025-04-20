@@ -5,7 +5,7 @@ function LoanItem({name, icon: Icon}){
     return (
         <div className="loan-item flex flex-col items-center">
             <div className="icon w-15 rounded-md h-13 p-4 transition transform active:scale-95">
-                <button type="button"><Icon className="w-7 h-7 font-bold text-white" /></button>
+                <button type="button"><Icon className="w-7 h-7 font-bold text-[#333]" /></button>
             </div>
             <h2 className="font-bold text-sm text-[#18263f] text-center mt-2">{name}</h2>
         </div>
