@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Routes, Route, Link, Navigate } from 'react-router-dom';
 import Home from './pages/Home'
 import Profile from './pages/Profile'
@@ -10,6 +10,10 @@ import ApplyLoan from './pages/ApplyLoan';
 
 function App() {
   const {token} = useAuth()
+
+  useEffect(() => {
+    window.scrollTo(0, document.body.scrollHeight);
+  }, []);
 
 
   return (
