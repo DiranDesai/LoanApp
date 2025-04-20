@@ -93,3 +93,8 @@ body{
   object-fit: cover;
 }
 
+
+.personal-information input{
+  width: 100%;
+  padding: 4px;
+}
