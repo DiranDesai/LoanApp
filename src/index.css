@@ -73,12 +73,12 @@ body{
 
 
 .loan-banner{
-  background: linear-gradient(45deg, #007eff, #0b303f);
+  background: linear-gradient(45deg, #007eff, #3ac6ff);
   margin-top: 30px;
 }
 
 .loan-item .icon{
-  background: linear-gradient(45deg, black, transparent);
+  background-color: #eeeeee;
 }
 
 .loan-options{
