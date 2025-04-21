@@ -10,7 +10,7 @@ function ApplyLoan() {
           <Personalnformation />
         </div>
         <BottomNavigation />
-        <NotifyDialog message="Something went wrong..."/>
+        {/* <NotifyDialog message="Something went wrong..."/> */}
     </>
   )
 }
