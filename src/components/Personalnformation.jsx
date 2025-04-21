@@ -9,14 +9,14 @@ function Personalnformation() {
             <div className="col-span-2">
                 <p>NRC</p>
             </div>
-            <div className="col-span-3 grid grid-cols-8 space-x-9">
+            <div className="col-span-3 grid grid-cols-9 space-x-9">
                 <div className="col-span-3">
                     <input type="text" maxLength={6} className="border" />
                 </div>
                 <div className="col-span-3">
                     <input type="text" maxLength={2} className="border " />
                 </div>
-                <div className="col-span-2">
+                <div className="col-span-3">
                     <input type="text" maxLength={1} className="border" />
                 </div>
             </div>
