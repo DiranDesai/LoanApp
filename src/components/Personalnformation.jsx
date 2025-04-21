@@ -2,7 +2,7 @@ import React from 'react'
 
 function Personalnformation() {
   return (
-    <div className="shadow-lg p-5 personal-information">
+    <div className="personal-info p-5 personal-information">
         <h2 className="text-2xl font-bold text-[#333]">Personal Information</h2>
         <div className="border-b my-4"></div>
         <div className="grid grid-cols-5 gap-5 mt-3">
