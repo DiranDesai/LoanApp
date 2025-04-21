@@ -1,7 +1,7 @@
 import React from 'react'
 import {CheckBadgeIcon, LockClosedIcon, UserGroupIcon, InformationCircleIcon, ShoppingBagIcon, CalendarDaysIcon, PencilSquareIcon, ArrowRightOnRectangleIcon  } from '@heroicons/react/24/outline';
 import { useNavigate } from 'react-router-dom'
-import admin from '../assets/admin.jpg'
+import admin from "../assets/fr-03.jpg";
 import user1 from "../assets/user1.png"
 import ProfileMenu from '../components/ProfileMenu';
 import BottomNavigation from '../components/BottomNavigation';
@@ -23,7 +23,7 @@ function Profile() {
         <div className="flex justify-center items-center mt-4">
             <div className="flex flex-col justify-center items-center space-y-1">
                <div className="relative">
-                <img src={user1} className="w-[120px] h-[120px] object-cover mt-5 rounded-full" alt="" />
+                <img src={admin} className="w-[120px] h-[120px] object-cover mt-5 rounded-full" alt="" />
                 <PencilSquareIcon className="h-7 w-7 font-bold bg-blue-400 text-white rounded-full p-2 hover:bg-red absolute right-0 top-5" />
                </div>
                 <h2 className="text-md font-[500]">Diran Sai</h2>
