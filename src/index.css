@@ -24,6 +24,20 @@ body{
   zoom: 0.8;
 }
 
+select{
+  padding: 9px !important;
+  background-color: white;
+}
+select:focus{
+  outline: none;
+}
+input{
+  background-color: white;
+}
+input:focus{
+  outline: none;
+}
+
 @layer utilities {
   input:-webkit-autofill {
     box-shadow: 0 0 0 1000px white inset !important;

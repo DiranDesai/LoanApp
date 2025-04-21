@@ -57,7 +57,7 @@ function Personalnformation() {
                 <p>Birthday</p>
             </div>
             <div className="col-span-3">
-                <select name="" id="" className="border w-full p-1"></select>
+                <select type="date" name="" id="" className="border w-full p-1"></select>
             </div>
         </div>
         <div className="border-b my-4"></div>
@@ -66,7 +66,10 @@ function Personalnformation() {
                 <p>District</p>
             </div>
             <div className="col-span-3">
-                <select name="" id="" className="border w-full p-1"></select>
+                <select name="" id="" className="border w-full p-1">
+                    <option value="shibuyunji district">shibuyunji district</option>
+                    <option value="mumbwa district">mumbwa district</option>
+                </select>
             </div>
         </div>
         <div className="border-b my-4"></div>
@@ -87,7 +90,7 @@ function Personalnformation() {
                 <select name="" id="" className="border w-full p-1"></select>
             </div>
         </div>
-        <button type="button" className="w-full p-3 bg-red-400 font-bold mt-10 text-white">Submit Application</button>
+        <button type="button" className="w-full p-3 bg-red-400 font-bold mt-10 text-white transition transform active:scale-95 outline-0">Submit Application</button>
     </div>
   )
 }
