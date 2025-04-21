@@ -47,7 +47,7 @@ function SignUp() {
             className="w-full rounded-md shadow-sm mt-2 px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"
           />
         </div>
-        <button type="button" className="w-full mt-10 p-3 text-white bg-[#ffac26] font-bold p-2 rounded-md hover:bg-[tomato] transition duration-200 ease-in-out">
+        <button type="button" className="w-full mt-10 p-3 text-white bg-[#ffac26] font-bold p-2 rounded-md hover:bg-[tomato] transition transform active:scale-95 duration-200 ease-in-out">
           Signup
         </button>
       </form>

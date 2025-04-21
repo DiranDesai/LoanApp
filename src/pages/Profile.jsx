@@ -36,7 +36,7 @@ function Profile() {
         <ProfileMenu Icon={<LockClosedIcon />} title="Account settings"/>
         <ProfileMenu Icon={<InformationCircleIcon />} title="Help and feedback"/>
         <ProfileMenu Icon={<ShoppingBagIcon />} title="Online services"/>
-        <button className="bg-red-400 text-white p-4 rounded-md w-full my-10 flex justify-center gap-3 font-bold" onClick={handleSignOut}>Logout <ArrowRightOnRectangleIcon className="h-6 w-6 text-white" /></button>
+        <button className="bg-red-400 text-white p-4 rounded-md w-full my-10 flex justify-center gap-3 font-bold transition transform active:scale-95" onClick={handleSignOut}>Logout <ArrowRightOnRectangleIcon className="h-6 w-6 text-white" /></button>
     </div>
     <BottomNavigation />
     </>
