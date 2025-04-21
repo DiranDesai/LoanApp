@@ -6,7 +6,7 @@ import SocialIcons from "../components/SocialIcons";
 import useAuth from "../hooks/useAuth"
 import Loader from "../components/Loader";
 import NotifyDialog from "../components/NotifyDialog";
-import { LOGIN_ERROR } from "../types";
+import { LOGIN_ERROR, USER_LOGIN_SUCCESS } from "../types";
 
 
 function Login() {
@@ -20,7 +20,7 @@ function Login() {
 
   useEffect(() => {
     if (token) {
-      navigate("/profile")
+      navigate("/")
     }
   }, [])
 
@@ -34,8 +34,9 @@ function Login() {
       dispatch({type: LOGIN_ERROR, payload: "Missing Fields"})
       return
     }
+    dispatch({type: USER_LOGIN_SUCCESS, payload: 123})
 
-    await loginUser({username: email, password})
+    //await loginUser({username: email, password})
   }
 
 

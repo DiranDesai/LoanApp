@@ -5,11 +5,15 @@ import admin from '../assets/admin.jpg'
 import user1 from "../assets/user1.png"
 import ProfileMenu from '../components/ProfileMenu';
 import BottomNavigation from '../components/BottomNavigation';
+import useAuth from '../hooks/useAuth';
+import { USER_LOGIN_SUCCESS } from '../types';
 
 function Profile() {
   const navigate = useNavigate()
+  const {dispatch} = useAuth()
   
   const handleSignOut = () => {
+    dispatch({type: USER_LOGIN_SUCCESS, payload: null})
     navigate('/login')
   }
 
