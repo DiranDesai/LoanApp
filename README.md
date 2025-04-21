@@ -1,75 +1,57 @@
-📘 LoanApp Documentation
-Overview
-LoanApp is a React-based web application that facilitates loan management for users. It offers functionalities such as applying for loans, tracking repayments, and viewing transaction histories. The application emphasizes a clean user interface and responsive design to ensure a seamless user experience.
+# 📘 LoanApp Documentation
 
-🔧 Features
-User Dashboard: Personalized greetings and overview of loan details.
+<h3><a href="https://loanapp-ofxu.onrender.com/">Live Demo</a></h3>
 
-Loan Application: Users can apply for new loans with ease.
+LoanApp is a **React-based web application** that facilitates loan management for users. It offers features like applying for loans, tracking repayments, and viewing transaction histories. The app emphasizes a **clean UI** and **responsive design** for a seamless user experience.
 
-Repayment Tracking: Monitor loan repayments and view installment schedules.
+---
 
-Transaction History: Access a detailed history of all loan-related transactions.
+## 🔧 Features
 
-Responsive Design: Optimized for various screen sizes and devices.
+- **User Dashboard**: Personalized greetings and an overview of available loan details.
+- **Loan Application**: Easily apply for new loans.
+- **Repayment Tracking**: Monitor repayment progress and view installment schedules.
+- **Transaction History**: Access detailed logs of all loan-related transactions.
+- **Responsive Design**: Optimized for all screen sizes and mobile devices.
 
-🛠️ Tech Stack
-Frontend:
+---
 
-React
+## 🛠️ SCREENS
+![Screenshot (209)](https://github.com/user-attachments/assets/2e024509-078a-4eec-bf3a-943b3d9063c7)
+![Screenshot (210)](https://github.com/user-attachments/assets/79b274f7-0df7-4fc1-9bff-ee1751656d2a)
+![Screenshot (211)](https://github.com/user-attachments/assets/6fde35d1-6ca4-4f99-ab74-516d158a56f2)
+![Screenshot (212)](https://github.com/user-attachments/assets/cc9a7d2f-889e-4c6f-a7bd-5315976eefd8)
+![Screenshot (213)](https://github.com/user-attachments/assets/3140f064-6597-4296-901a-3ea31d4dd0e0)
 
-Vite
 
-Tailwind CSS
+## 🛠️ Tech Stack
 
-Tooling:
+### 🚀 Frontend
+- **React**
+- **Vite**
+- **Tailwind CSS**
 
-ESLint for code linting
+### 🧰 Tooling
+- **ESLint** – For code linting and quality
+- **PostCSS** – For CSS transformations and processing
 
-PostCSS for CSS transformations
+---
 
-🚀 Getting Started
-Prerequisites
-Ensure you have the following installed:
+## ⚙️ Getting Started
 
-Node.js (v14 or higher)
+### 📦 Prerequisites
 
-npm or Yarn
+Ensure you have the following installed on your machine:
 
-Installation
-Clone the Repository:
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- npm or [Yarn](https://yarnpkg.com/)
 
-bash
-Copy
-Edit
+---
+
+### 📥 Installation
+
+#### 1. Clone the Repository
+
+```bash
 git clone https://github.com/DiranDesai/LoanApp.git
 cd LoanApp
-Install Dependencies:
-
-Using npm:
-
-bash
-Copy
-Edit
-npm install
-Or using Yarn:
-
-bash
-Copy
-Edit
-yarn install
-Start the Development Server:
-
-Using npm:
-
-bash
-Copy
-Edit
-npm run dev
-Or using Yarn:
-
-bash
-Copy
-Edit
-yarn dev
-The application will be available at http://localhost:5173/ by default.
