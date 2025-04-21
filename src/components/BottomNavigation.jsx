@@ -38,8 +38,8 @@ import { Link, useLocation } from "react-router-dom";
     return (
       <div
         className={`flex flex-col items-center ${
-          active ? "text-blue-500" : "text-gray-600"
-        } hover:text-blue-500 cursor-pointer transition`}
+          active ? "text-[#F44336]" : "text-gray-600"
+        } hover:text-red-300 cursor-pointer transition`}
       >
         {icon}
         <span className="text-xs mt-1">{label}</span>

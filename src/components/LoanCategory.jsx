@@ -8,7 +8,7 @@ function LoanCategory() {
     <div className="mt-10 loan-category">
         <div className="flex items-center justify-between">
             <h2 className="font-bold">Loan Category</h2>
-            <Link><span className="text-blue-500 font-bold">See more</span></Link>
+            <Link><span className="text-[#F44336] font-bold">See more</span></Link>
         </div>
         <div className="grid grid-cols-2 space-x-3">
             <div className="mt-4 rounded-md p-5 category">
