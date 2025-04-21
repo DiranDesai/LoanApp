@@ -11,13 +11,13 @@ function Personalnformation() {
             </div>
             <div className="col-span-3 grid grid-cols-8 space-x-9">
                 <div className="col-span-3">
-                    <input type="text" className="border" />
+                    <input type="text" maxLength={6} className="border" />
                 </div>
                 <div className="col-span-3">
-                    <input type="text" className="border " />
+                    <input type="text" maxLength={2} className="border " />
                 </div>
                 <div className="col-span-2">
-                    <input type="text" className="border" />
+                    <input type="text" maxLength={1} className="border" />
                 </div>
             </div>
         </div>
