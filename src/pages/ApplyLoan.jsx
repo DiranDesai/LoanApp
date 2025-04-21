@@ -1,5 +1,6 @@
 import React from 'react'
 import BottomNavigation from '../components/BottomNavigation'
+import NotifyDialog from '../components/NotifyDialog'
 import Personalnformation from '../components/Personalnformation'
 
 function ApplyLoan() {
@@ -9,6 +10,7 @@ function ApplyLoan() {
           <Personalnformation />
         </div>
         <BottomNavigation />
+        <NotifyDialog message="Something went wrong..."/>
     </>
   )
 }

@@ -44,6 +44,15 @@ body{
   margin-top: 20px; */
 }
 
+.signup input, .login input{
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  border: none;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+
 
 .loader {
   width: 50px;

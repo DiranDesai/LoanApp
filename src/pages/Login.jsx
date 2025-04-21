@@ -55,6 +55,7 @@ function Login() {
           <input
             type="text"
             onChange={(e) => setEmail(e.target.value)}
+            placeholder="example@gmail.com"
             className="w-full shadow-sm mt-2 px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"
           />
         </div>
@@ -65,6 +66,7 @@ function Login() {
           <input
             type="password"
             onChange={(e) => setPassword(e.target.value)}
+            placeholder="**********"
             className="w-full shadow-sm mt-2 px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"
           />
         </div>

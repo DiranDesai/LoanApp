@@ -43,11 +43,11 @@ function Personalnformation() {
             <div className="grid grid-cols-2 col-span-3">
                 <div className="flex items-center">
                     <input type="checkbox" className="border" />
-                    <span className="text-xl">Male</span>
+                    <span>Male</span>
                 </div>
                 <div className="flex items-center">
                     <input type="checkbox" className="border" />
-                    <span className="text-xl">Female</span>
+                    <span>Female</span>
                 </div>
             </div>
         </div>
