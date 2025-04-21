@@ -1,5 +1,7 @@
 # 📘 LoanApp Documentation
 
+<h3><a href="https://loanapp-ofxu.onrender.com/">Live Demo</a></h3>
+
 LoanApp is a **React-based web application** that facilitates loan management for users. It offers features like applying for loans, tracking repayments, and viewing transaction histories. The app emphasizes a **clean UI** and **responsive design** for a seamless user experience.
 
 ---
