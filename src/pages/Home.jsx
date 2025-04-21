@@ -2,6 +2,7 @@ import React from 'react'
 import BottomNavigation from '../components/BottomNavigation'
 import Loader from '../components/Loader'
 import LoanBanner from '../components/LoanBanner'
+import LoanCategory from '../components/LoanCategory'
 import LoanOptions from '../components/LoanOptions'
 import ProfileBanner from '../components/ProfileBanner'
 
@@ -12,6 +13,7 @@ function Home() {
         <ProfileBanner />
         <LoanBanner />
         <LoanOptions />
+        <LoanCategory />
       </div>
       <BottomNavigation />
       {/* <Loader /> */}

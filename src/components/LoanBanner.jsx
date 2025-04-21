@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { PencilSquareIcon } from "@heroicons/react/24/outline";
 
+
 function LoanBanner() {
   return (
     <div className="p-5 mt-6 rounded-md bg-red-500 loan-banner">
