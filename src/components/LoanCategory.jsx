@@ -13,7 +13,7 @@ function LoanCategory() {
         <div className="grid grid-cols-2 space-x-3">
             <div className="bg-gray-100 mt-4 rounded-md p-5">
                 <div>
-                    <img src={home} classNam="w-2 h-2" alt="" />
+                    <img src={home} className="w-2 h-2" alt="" />
                     
                 </div>
                 <h2 className="font-bold">Home Loan</h2>
@@ -21,7 +21,7 @@ function LoanCategory() {
             </div>
             <div className="bg-gray-100 mt-4 rounded-md p-5">
                 <div>
-                    <img src={business} classNam="w-2 h-2" alt="" />
+                    <img src={business} className="w-2 h-2" alt="" />
                     
                 </div>
                 <h2 className="font-bold">Business Loan</h2>
