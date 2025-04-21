@@ -9,7 +9,7 @@ import ProfileBanner from '../components/ProfileBanner'
 function Home() {
   return (
     <>
-      <div className="px-5 pt-2 pb-8">
+      <div className="px-5 home-page pt-2 pb-8">
         <ProfileBanner />
         <LoanBanner />
         <LoanOptions />

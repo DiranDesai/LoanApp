@@ -96,7 +96,8 @@ input:focus{
 
 
 .loan-banner{
-  background: linear-gradient(45deg, #007eff, #3ac6ff);
+  /* background: linear-gradient(45deg, #007eff, #3ac6ff); */
+  background: linear-gradient(45deg, #F44336, #eb665c);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin-top: 30px;
 }
@@ -132,3 +133,17 @@ input:focus{
 .loan-category .category{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+.personal-info{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+@media(min-width: 1000px){
+  .home-page{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 40px;
+  }
+}
+
