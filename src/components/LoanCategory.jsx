@@ -11,7 +11,7 @@ function LoanCategory() {
             <Link><span className="text-blue-500 font-bold">See more</span></Link>
         </div>
         <div className="grid grid-cols-2 space-x-3">
-            <div className="bg-gray-100 mt-4 rounded-md p-5">
+            <div className="mt-4 rounded-md p-5 category">
                 <div>
                     <img src={home} className="w-2 h-2" alt="" />
                     
@@ -19,7 +19,7 @@ function LoanCategory() {
                 <h2 className="font-bold">Home Loan</h2>
                 <p className="text-sm">Low-interest rates for your dream home</p>
             </div>
-            <div className="bg-gray-100 mt-4 rounded-md p-5">
+            <div className="mt-4 category rounded-md p-5">
                 <div>
                     <img src={business} className="w-2 h-2" alt="" />
                     
