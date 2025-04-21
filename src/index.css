@@ -119,10 +119,13 @@ input:focus{
 }
 
 
-.personal-information input{
+.personal-information input, .personal-information select{
   width: 100%;
-  padding: 4px;
+  padding: 5px;
+  border: 2px solid #cccccc;
+  background-color: white;
 }
+
 
 .loan-category img{
   width: 60px;
@@ -136,6 +139,7 @@ input:focus{
 
 .personal-info{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-bottom: 5rem;
 }
 
 
