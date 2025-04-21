@@ -76,7 +76,7 @@ function Login() {
             <Link>forgot password</Link>
           </span>
         </div>
-        <button type="submit" className="w-full mt-10 p-3 text-white bg-[#ffac26] font-bold p-2 rounded-md hover:bg-[tomato] transition duration-200 ease-in-out">
+        <button type="submit" className="w-full mt-10 p-3 text-white bg-[#ffac26] font-bold p-2 rounded-md hover:bg-[tomato] transition duration-200 transform active:scale-95 ease-in-out">
           Login
         </button>
       </form>

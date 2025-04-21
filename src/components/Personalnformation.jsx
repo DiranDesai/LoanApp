@@ -57,7 +57,8 @@ function Personalnformation() {
                 <p>Birthday</p>
             </div>
             <div className="col-span-3">
-                <select type="date" name="" id="" className="border w-full p-1"></select>
+                {/* <select type="date" name="" id="" className="border w-full p-1"></select> */}
+                <input type="date" maxLength={2} className="border " />
             </div>
         </div>
         <div className="border-b my-4"></div>
