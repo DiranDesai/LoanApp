@@ -121,7 +121,7 @@ input:focus{
 
 .personal-information input, .personal-information select{
   width: 100%;
-  padding: 5px;
+  padding: 9px;
   border: 2px solid #cccccc;
   background-color: white;
 }
@@ -150,4 +150,89 @@ input:focus{
     padding: 40px;
   }
 }
+
+.skeleton-container {
+  padding: 16px;
+  background: #f9f9f9;
+}
+
+.skeleton-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.skeleton-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ddd;
+  animation: pulse 1.2s infinite;
+}
+
+.skeleton-lines .skeleton-line {
+  height: 12px;
+  background: #ddd;
+  animation: pulse 1.2s infinite;
+  margin-bottom: 6px;
+  border-radius: 6px;
+}
+
+.skeleton-line.short {
+  width: 80px;
+}
+
+.skeleton-line.long {
+  width: 140px;
+}
+
+.skeleton-card.large {
+  height: 100px;
+  background: #ddd;
+  border-radius: 12px;
+  animation: pulse 1.2s infinite;
+  margin-bottom: 24px;
+}
+
+.skeleton-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.skeleton-icon {
+  width: 60px;
+  height: 60px;
+  background: #ddd;
+  border-radius: 12px;
+  animation: pulse 1.2s infinite;
+}
+
+.skeleton-category {
+  display: flex;
+  gap: 16px;
+}
+
+.skeleton-box {
+  flex: 1;
+  height: 80px;
+  background: #ddd;
+  border-radius: 12px;
+  animation: pulse 1.2s infinite;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    background-color: #e0e0e0;
+  }
+  50% {
+    background-color: #f0f0f0;
+  }
+  100% {
+    background-color: #e0e0e0;
+  }
+}
+
 
