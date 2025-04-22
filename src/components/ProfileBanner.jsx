@@ -15,7 +15,7 @@ function ProfileBanner() {
         <div>
           <p className="text-[#6f7b87]">Happy Monday!</p>
           <h2 className="font-medium text-xl text-[rgb(41,51,63)]">
-            Choolwe Sosala
+            Diran Sai
           </h2>
         </div>
       </div>
