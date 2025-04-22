@@ -1,13 +1,13 @@
 import React from 'react'
 import BottomNavigation from '../components/BottomNavigation'
 import NotifyDialog from '../components/NotifyDialog'
-import Personalnformation from '../components/Personalnformation'
+import ApplicationForm from '../components/ApplicationForm'
 
 function ApplyLoan() {
   return (
     <>
         <div className="p-5">
-          <Personalnformation />
+          <ApplicationForm />
         </div>
         <BottomNavigation />
         {/* <NotifyDialog message="Something went wrong..."/> */}

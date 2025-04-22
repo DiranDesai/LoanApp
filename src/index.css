@@ -119,7 +119,7 @@ input:focus{
 }
 
 
-.personal-information input, .personal-information select{
+.application-form input, .application-form select{
   width: 100%;
   padding: 9px;
   border: 2px solid #cccccc;
@@ -137,7 +137,7 @@ input:focus{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.personal-info{
+.application-form{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding-bottom: 5rem;
 }
