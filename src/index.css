@@ -74,7 +74,7 @@ input:focus{
   display: grid;
   border: 4px solid #0000;
   border-radius: 50%;
-  border-right-color: #ffffff;
+  border-right-color: #f44336;
   animation: l15 1s infinite linear;
 }
 .loader::before,
