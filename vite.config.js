@@ -34,7 +34,7 @@ export default defineConfig({
         form_factor: "mobile",
         screenshots: [
           {
-            src: "/screenshot.png",
+            src: "/Screenshot.png",
             sizes: "360x640",
             type: "image/jpeg",
           },
