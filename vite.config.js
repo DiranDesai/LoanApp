@@ -8,8 +8,8 @@ export default defineConfig({
     registerType: 'autoUpdate', // or 'prompt'
     includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
     manifest: {
-      name: 'LoanApp',
-      short_name: 'LoanApp',
+      name: 'LendSia',
+      short_name: 'LendSia',
       description: 'An awesome lending platform',
       theme_color: '#ffffff',
       icons: [
