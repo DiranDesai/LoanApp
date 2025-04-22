@@ -35,7 +35,7 @@ export default defineConfig({
         screenshots: [
           {
             src: "/Screenshot.png",
-            sizes: "360x640",
+            sizes: "596x1080",
             type: "image/png",
           },
         ],
