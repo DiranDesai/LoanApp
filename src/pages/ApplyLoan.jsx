@@ -6,7 +6,7 @@ import ApplicationForm from '../components/ApplicationForm'
 function ApplyLoan() {
   return (
     <>
-        <div className="p-5">
+        <div className="px-4 py-2">
           <ApplicationForm />
         </div>
         <BottomNavigation />

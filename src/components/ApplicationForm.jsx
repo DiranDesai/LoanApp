@@ -33,7 +33,7 @@ function ApplicationForm() {
 
   return (
     <div className="p-5 application-form transition-all duration-500 ease-in-out transform">
-        <h2 className="text-2xl font-bold text-[#333]">{steps[currentStep].name}</h2>
+        <h2 className="text-xl font-bold text-[#333]">{steps[currentStep].name}</h2>
         <div className="border-b my-4"></div>
         {currentStep === 0 && <PersonalInformation />}
         {currentStep === 1 && <LoanApplyInformation />}
