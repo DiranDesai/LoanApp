@@ -4,18 +4,19 @@ import BorderLine from "./BorderLine";
 function LoanApplyInformation() {
   return (
     <>
-      <div className="grid grid-cols-6 opacity-100 translate-x-0 gap-5 mt-3">
+      <div className="grid grid-cols-6 items-center opacity-100 translate-x-0 gap-5 mt-3">
         <div className="col-span-2">
           <p>Amount</p>
         </div>
         <div className="col-span-4 grid">
-          <div>
-            <input type="number" maxLength={2} className="border" />
+          <div className="relative">
+            <span className="absolute left-2 top-1/2 transform -translate-y-1/2 text-black font-bold">K</span>
+            <input type="number" maxLength={2} className="border input-currency" />
           </div>
         </div>
       </div>
       <BorderLine />
-      <div className="grid grid-cols-6 gap-5 mt-3">
+      <div className="grid grid-cols-6 items-center gap-5 mt-3">
         <div className="col-span-2">
           <p>Purpose</p>
         </div>
@@ -38,7 +39,7 @@ function LoanApplyInformation() {
         </div>
       </div>
       <BorderLine />
-      <div className="grid grid-cols-6 gap-5 mt-3">
+      <div className="grid grid-cols-6 items-center gap-5 mt-3">
         <div className="col-span-2">
           <p>Payment date</p>
         </div>

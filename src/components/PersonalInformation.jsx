@@ -13,7 +13,7 @@ function PersonalInformation() {
 
   return (
     <>
-      <div className="grid grid-cols-6 gap-5 mt-3">
+      <div className="grid grid-cols-6 items-center gap-5 mt-3">
         <div className="col-span-2">
           <p>NRC</p>
         </div>
@@ -30,7 +30,7 @@ function PersonalInformation() {
         </div>
       </div>
       <BorderLine />
-      <div className="grid grid-cols-6 gap-5 mt-3">
+      <div className="grid grid-cols-6 items-center gap-5 mt-3">
         <div className="col-span-2">
           <p>Full names</p>
         </div>
@@ -44,7 +44,7 @@ function PersonalInformation() {
         </div>
       </div>
       <BorderLine />
-      <div className="grid grid-cols-6 gap-5 mt-3">
+      <div className="grid grid-cols-6 items-center gap-5 mt-3">
         <div className="col-span-2">
           <p>Gender</p>
         </div>
@@ -60,7 +60,7 @@ function PersonalInformation() {
         </div>
       </div>
       <BorderLine />
-      <div className="grid grid-cols-6 gap-5 mt-3">
+      <div className="grid grid-cols-6 items-center gap-5 mt-3">
         <div className="col-span-2">
           <p>Birthday</p>
         </div>
@@ -69,7 +69,7 @@ function PersonalInformation() {
         </div>
       </div>
       <BorderLine />
-      <div className="grid grid-cols-6 gap-5 mt-3">
+      <div className="grid grid-cols-6 items-center gap-5 mt-3">
         <div className="col-span-2">
           <p>Province</p>
         </div>
@@ -84,7 +84,7 @@ function PersonalInformation() {
         </div>
       </div>
       <BorderLine />
-      <div className="grid grid-cols-6 gap-5 mt-3">
+      <div className="grid grid-cols-6 items-center items-center gap-5 mt-3">
         <div className="col-span-2">
           <p>District</p>
         </div>
