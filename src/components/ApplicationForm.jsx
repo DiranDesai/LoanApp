@@ -41,7 +41,7 @@ function ApplicationForm() {
         {currentStep === 3 && <UploadDocuments />}
         {currentStep === 4 && <ReviewSubmit />}
         
-        <button type="button" className="w-full p-3 bg-red-400 font-bold mt-10 text-white transition transform active:scale-95 outline-0" onClick={handleNext}>
+        <button type="button" className="w-full p-3 btn-sp font-bold mt-10 text-white transition transform active:scale-95 outline-0" onClick={handleNext}>
           {currentStep === steps.length - 1 ? 'Submit' : 'Proceed'}
         </button>
     </div>

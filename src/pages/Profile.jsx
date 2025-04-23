@@ -19,7 +19,7 @@ function Profile() {
 
   return (
     <>
-      <div className="px-2 profile-page max-w-[700px] rounded-md mx-auto pt-2 pb-8">
+      <div className="px-5 profile-page max-w-[700px] rounded-md mx-auto pt-2 pb-8">
         <div className="flex justify-center items-center mt-4">
             <div className="flex flex-col justify-center items-center space-y-1">
                <div className="relative">
@@ -36,7 +36,7 @@ function Profile() {
         <ProfileMenu Icon={<LockClosedIcon />} title="Account settings"/>
         <ProfileMenu Icon={<InformationCircleIcon />} title="Help and feedback"/>
         <ProfileMenu Icon={<ShoppingBagIcon />} title="Online services"/>
-        <button className="bg-red-400 text-white p-4 rounded-md w-full my-10 flex justify-center gap-3 font-bold transition transform active:scale-95" onClick={handleSignOut}>Logout <ArrowRightOnRectangleIcon className="h-6 w-6 text-white" /></button>
+        <button className="btn-sp text-white p-4 rounded-md w-full my-10 flex justify-center gap-3 font-bold transition transform active:scale-95" onClick={handleSignOut}>Logout <ArrowRightOnRectangleIcon className="h-6 w-6 text-white" /></button>
     </div>
     <BottomNavigation />
     </>
