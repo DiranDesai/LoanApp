@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import BorderLine from "./BorderLine";
+import { zambiaDistricts } from '../data/main'
+
+
+const provinces = Object.keys(zambiaDistricts);
+
+console.log(provinces)
+
 
 function PersonalInformation() {
+  const [selectedDistrict, setSelectedDistrict] = useState(provinces[0]);
+
   return (
     <>
       <div className="grid grid-cols-6 gap-5 mt-3">
@@ -19,7 +29,7 @@ function PersonalInformation() {
           </div>
         </div>
       </div>
-      <div className="border-b my-4"></div>
+      <BorderLine />
       <div className="grid grid-cols-6 gap-5 mt-3">
         <div className="col-span-2">
           <p>Full names</p>
@@ -33,7 +43,7 @@ function PersonalInformation() {
           </div>
         </div>
       </div>
-      <div className="border-b my-4"></div>
+      <BorderLine />
       <div className="grid grid-cols-6 gap-5 mt-3">
         <div className="col-span-2">
           <p>Gender</p>
@@ -49,7 +59,7 @@ function PersonalInformation() {
           </div>
         </div>
       </div>
-      <div className="border-b my-4"></div>
+      <BorderLine />
       <div className="grid grid-cols-6 gap-5 mt-3">
         <div className="col-span-2">
           <p>Birthday</p>
@@ -58,34 +68,34 @@ function PersonalInformation() {
           <input type="date" maxLength={2} className="border " />
         </div>
       </div>
-      <div className="border-b my-4"></div>
+      <BorderLine />
+      <div className="grid grid-cols-6 gap-5 mt-3">
+        <div className="col-span-2">
+          <p>Province</p>
+        </div>
+        <div className="col-span-4">
+          <select name="" id="" className="border w-full p-1" onChange={(e) => setSelectedDistrict(e.target.value)}>
+            {provinces.map((province, index) => (
+              <option key={index} value={province}>
+                {province}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+      <BorderLine />
       <div className="grid grid-cols-6 gap-5 mt-3">
         <div className="col-span-2">
           <p>District</p>
         </div>
         <div className="col-span-4">
           <select name="" id="" className="border w-full p-1">
-            <option value="shibuyunji district">shibuyunji district</option>
-            <option value="mumbwa district">mumbwa district</option>
+            {zambiaDistricts[selectedDistrict].map((district, index) => (
+              <option key={index} value={district}>
+                {district}
+              </option>
+            ))}
           </select>
-        </div>
-      </div>
-      <div className="border-b my-4"></div>
-      <div className="grid grid-cols-6 gap-5 mt-3">
-        <div className="col-span-2">
-          <p>Sector</p>
-        </div>
-        <div className="col-span-4">
-          <select name="" id="" className="border w-full p-1"></select>
-        </div>
-      </div>
-      <div className="border-b my-4"></div>
-      <div className="grid grid-cols-6 gap-5 mt-3">
-        <div className="col-span-2">
-          <p>Monthly income</p>
-        </div>
-        <div className="col-span-4">
-          <select name="" id="" className="border w-full p-1"></select>
         </div>
       </div>
     </>

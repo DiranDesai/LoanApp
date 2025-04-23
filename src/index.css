@@ -140,7 +140,7 @@ input:focus{
 .application-form{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding-bottom: 5rem;
-  height: 100vh;
+  height: 100%;
 }
 
 
