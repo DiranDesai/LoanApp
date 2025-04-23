@@ -41,6 +41,12 @@ input:focus{
   outline: none;
 }
 
+.btn-sp{
+  background: linear-gradient(45deg, #F44336, #eb665c);
+  border-radius: 5px;
+  padding: 15px;
+}
+
 @layer utilities {
   input:-webkit-autofill {
     box-shadow: 0 0 0 1000px white inset !important;
