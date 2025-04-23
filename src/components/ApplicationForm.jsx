@@ -3,6 +3,7 @@ import PersonalInformation from './PersonalInformation'
 import LoanApplyInformation from './LoanApplyInformation'
 import EmploymentInformation from './EmploymentInformation'
 import ReviewSubmit from './ReviewSubmit'
+import UploadDocuments from './UploadDocuments'
 
 const steps = [
   { id: 1, name: 'Personal Information' },
@@ -37,7 +38,8 @@ function ApplicationForm() {
         {currentStep === 0 && <PersonalInformation />}
         {currentStep === 1 && <LoanApplyInformation />}
         {currentStep === 2 && <EmploymentInformation />}
-        {currentStep === 3 && <ReviewSubmit />}
+        {currentStep === 3 && <UploadDocuments />}
+        {currentStep === 4 && <ReviewSubmit />}
         
         <button type="button" className="w-full p-3 bg-red-400 font-bold mt-10 text-white transition transform active:scale-95 outline-0" onClick={handleNext}>Proceed</button>
     </div>

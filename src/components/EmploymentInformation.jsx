@@ -5,7 +5,7 @@ import BorderLine from './BorderLine'
 function EmploymentInformation() {
   return (
     <>
-      <div className="grid grid-cols-6 opacity-100 translate-x-0 gap-5 mt-3">
+      <div className="grid grid-cols-6 items-center opacity-100 translate-x-0 gap-5 mt-3">
         <div className="col-span-2">
           <p>Employment</p>
         </div>
@@ -21,7 +21,7 @@ function EmploymentInformation() {
         </div>
       </div>
       <BorderLine />
-      <div className="grid grid-cols-6 gap-5 mt-3">
+      <div className="grid grid-cols-6 items-center gap-5 mt-3">
         <div className="col-span-2">
           <p>Company</p>
         </div>
@@ -32,7 +32,7 @@ function EmploymentInformation() {
         </div>
       </div>
       <BorderLine />
-      <div className="grid grid-cols-6 gap-5 mt-3">
+      <div className="grid grid-cols-6 items-center gap-5 mt-3">
         <div className="col-span-2">
           <p>Position</p>
         </div>
@@ -43,13 +43,14 @@ function EmploymentInformation() {
         </div>
       </div>
       <BorderLine />
-      <div className="grid grid-cols-6 gap-5 mt-3">
+      <div className="grid grid-cols-6 items-center gap-5 mt-3">
         <div className="col-span-2">
           <p>Monthly income</p>
         </div>
         <div className="grid space-y-5 col-span-4">
-          <div>
-            <input type="number" className="border" />
+          <div className="relative">
+            <span className="absolute left-2 top-1/2 transform -translate-y-1/2 text-black font-bold">K</span>
+            <input type="number" className="border input-currency" />
           </div>
         </div>
       </div>
