@@ -2,10 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import admin from "../assets/fr-03.jpg";
 import user1 from "../assets/user1.png";
-
 import { BellAlertIcon } from "@heroicons/react/24/outline";
+import { weekDays } from "../data/main";
 
 function ProfileBanner() {
+  const currentDate = new Date();
+  const currentDay = weekDays[currentDate.getDay()];
+
   return (
     <div className="flex items-center justify-between">
       <div className="flex items-center justify-between">
@@ -13,7 +16,7 @@ function ProfileBanner() {
           <img src={admin} className="rounded-full user-avatar w-[60px] h-[60px]" alt="" />
         </Link>
         <div>
-          <p className="text-[#6f7b87]">Happy Monday!</p>
+          <p className="text-[#6f7b87]">Happy {currentDay}!</p>
           <h2 className="font-medium text-xl text-[rgb(41,51,63)]">
             Diran Sai
           </h2>
