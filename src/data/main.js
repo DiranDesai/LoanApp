@@ -42,4 +42,15 @@ export const zambiaDistricts = {
       "Shang'ombo", "Sikongo", "Sioma"
     ]
 };
+
+export const weekDays = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+];
+  
   
