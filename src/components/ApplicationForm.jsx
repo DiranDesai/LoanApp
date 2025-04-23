@@ -24,6 +24,14 @@ function ApplicationForm() {
   const { personalInfo, loanInfo, employmentInfo } = formData;
 
   const handleNext = () => {
+if(currentStep === 0 && !personalInfo.fullName.firstName){
+dispatch({
+         type: SET_ERROR,
+       payload: "Please fill in all required fields before proceeding.",
+       });
+      return;
+}
+
     // if (
     //   currentStep === 0 &&
     //   (!personalInfo.fullName.firstName ||
