@@ -8,7 +8,8 @@ const steps = [
   { id: 1, name: 'Personal Information' },
   { id: 2, name: 'Loan Information' },
   { id: 3, name: 'Employment Information'},
-  { id: 4, name: 'Review and Submit' },
+  { id: 4, name: 'Upload Documents' },
+  { id: 5, name: 'Review and Submit' },
 ]
 
 function ApplicationForm() {
