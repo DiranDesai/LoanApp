@@ -24,7 +24,7 @@ function Profile() {
             <div className="flex flex-col justify-center items-center space-y-1">
                <div className="relative">
                 <img src={admin} className="w-[120px] h-[120px] object-cover mt-5 rounded-full" alt="" />
-                <PencilSquareIcon className="h-7 w-7 font-bold bg-blue-400 text-white rounded-full p-2 hover:bg-red absolute right-0 top-5" />
+                <PencilSquareIcon className="h-7 w-7 font-bold bg-red-600 text-white rounded-full p-2 hover:bg-red absolute right-0 top-5" />
                </div>
                 <h2 className="text-md font-[500]">Diran Sai</h2>
                 <p className="font-extrabold">+260776047932</p>

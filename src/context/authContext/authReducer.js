@@ -12,6 +12,10 @@ const authReducer = (state, action) => {
             return {...state, loading: false, error: action.payload}
         case LOGIN_ERROR:
             return {...state, loading: false, error: null}
+        case "SET_ERROR":
+            return { ...state, error: action.payload };
+        case "RESET_ERROR":
+            return { ...state, error: null };
         default:
             break;
     }

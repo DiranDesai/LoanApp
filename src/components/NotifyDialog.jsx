@@ -1,14 +1,15 @@
 import React from "react";
 import useAuth from "../hooks/useAuth";
 import { RESET_ERROR } from "../types";
+import error1 from "../assets/error2.jpg";
 
 function NotifyDialog({message}) {
     const {dispatch} = useAuth()
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-5">
-    <div className="bg-white w-full max-w-md p-6 rounded-lg shadow-lg relative">
-      <h2 className="text-xl font-bold text-red-600 mb-4">Error</h2>
+    <div className="bg-white w-full max-w-md p-6 rounded-lg shadow-lg relative transform scale-80 duration-25 transition animate-fadeInUp">
+      <img src={error1} alt="Error" className="w-16 h-16 mb-4 mx-auto" />
       <p className="text-gray-700 mb-6">{message}</p>
       <div className="flex justify-end">
         <button
