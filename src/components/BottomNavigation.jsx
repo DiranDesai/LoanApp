@@ -23,7 +23,7 @@ import { Link, useLocation } from "react-router-dom";
         {navItems.map(({ to, label, icon: Icon }) => (
           <Link to={to} key={label}>
             <NavItem
-              icon={<Icon className="h-10 w-10" />}
+              icon={<Icon className="h-8 w-8" />}
               label={label}
               active={location.pathname === to}
             />
