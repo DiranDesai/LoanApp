@@ -8,7 +8,7 @@ import useAuth from "../hooks/useAuth";
 
 function ProfileBanner() {
   const currentDate = new Date();
-  const currentDay = weekDays[currentDate.getDay()];
+  const currentDay = weekDays[currentDate.getDay() - 1];
   console.log(currentDate.getDay())
 
   const {profile} = useAuth()
