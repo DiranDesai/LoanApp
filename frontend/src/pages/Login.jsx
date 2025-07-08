@@ -48,12 +48,12 @@ function Login() {
 
     try {
    
-      const data = await loginUser(formData)
-      const {_doc} = await getCurrentUser(data.token)
+      const data = await loginUser(formData) 
+      const userData = await getCurrentUser(data.token)
       localStorage.setItem("token", data.token);
+      console.log(userData)
       dispatch({ type: USER_LOGIN_SUCCESS, payload: data }); 
-      dispatch({type: UPDATE_PROFILE, payload: _doc})
-      localStorage.setItem("token", data.token)
+      dispatch({type: UPDATE_PROFILE, payload: userData})
     } catch (error) {
       console.log(error)
     }

@@ -9,7 +9,8 @@ import useAuth from "../hooks/useAuth";
 import { RESET_ERROR, SET_ERROR } from "../types";
 import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
 import NotifyDialog from "./NotifyDialog";
-import { showErrorAlert, showToastError, showToastSuccess } from "../services/sweetAlertService";
+import { applyLoan } from "../services/loanService";
+import { showErrorAlert, showToastError, showToastSuccess, showSuccessAlert } from "../services/sweetAlertService";
 
 const steps = [
   { id: 1, name: "Personal Information" },
@@ -97,10 +98,18 @@ function ApplicationForm() {
     setCurrentStep(currentStep + 1);
   };
 
+
+
   const goBack = () => {
     if (currentStep > 0) {
       setCurrentStep(currentStep - 1);
     }
+  }
+
+  async function handleSubmit() {
+    const {message} = await applyLoan(formData)
+    //showToastSuccess(message +" 🎉")
+    showSuccessAlert("Success", message)
   }
   
   
@@ -124,6 +133,7 @@ function ApplicationForm() {
             type="button"
             className="w-full flex gap-3 items-center justify-center scale-75 p-3 btn-sp font-bold mt-10 text-white transition transform active:scale-95 outline-0 rounded-lg"
             onClick={goBack}
+            disabled={currentStep === 0}
           >
             <ArrowLeftIcon className="w-5 h-5" />
             Go Back
@@ -132,7 +142,7 @@ function ApplicationForm() {
           <button
             type="button"
             className="w-full flex gap-3 items-center justify-center scale-75 p-3 btn-sp font-bold mt-10 text-white transition transform active:scale-95 outline-0 text-lg rounded-lg"
-            onClick={handleNext}
+            onClick={currentStep === steps.length - 1 ? handleSubmit : handleNext}
           >
             {currentStep === steps.length - 1 ? "Submit" : "Next"}
             <ArrowRightIcon className="w-5 h-5" />

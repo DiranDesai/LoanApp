@@ -14,18 +14,21 @@ const protect = async (req, res, next) => {
             });
         } else {
             const decoded = await verifyToken(token)
+            console.log(decoded)
             if (!decoded) {
                 return res.status(401).json({ message: "Invalid token" });
             }
-            req.user = await User.findOne({_id: decoded.userId}).select("-password");
-            next();
+            const user = await User.findOne({where: {id: decoded.userId}});
+            const plainUser = user.toJSON();
+            delete plainUser.password
+            req.user = plainUser
+            next(); 
         }
     } else {
         res.status(401).json({
             msg: "Not authorized"
         })
     }
-    
 }
 
 export default protect

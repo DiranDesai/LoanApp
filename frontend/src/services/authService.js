@@ -1,8 +1,4 @@
-const API_ENDPOINT = "http://localhost:5000/api/v1";
-const headers = {
-  "Content-Type": "application/json"
-}
-const token = localStorage.getItem("token")
+import {API_ENDPOINT, headers, token} from "../constants.js"
 
 const registerUser = async (userData) => {
   try {

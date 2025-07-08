@@ -44,13 +44,13 @@ export const zambiaDistricts = {
 };
 
 export const weekDays = [
-    "Sunday",
     "Monday",
     "Tuesday",
-    "Wednesday",
+    "Tuesday",
     "Thursday",
     "Friday",
     "Saturday",
+    "Sunday"
 ];
   
   

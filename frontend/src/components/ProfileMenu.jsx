@@ -9,7 +9,7 @@ function ProfileMenu({Icon, title, ShowArrow=true}) {
             <span className="w-6 h-6 lg:w-10 lg:h-10 self-center">{Icon}</span>
             <h2 className="text-[16px] text-[#181818] font-[500] self-center">{title}</h2>
         </div>
-        {ShowArrow ? <ArrowRightIcon  className="h-6 w-6 font-bold text-gray-500 self-center" /> : <p className="font-extrabold">150</p>}  
+        {ShowArrow ? <ArrowRightIcon  className="h-6 w-6 font-bold text-gray-500 self-center" /> : <p className="font-extrabold">1500</p>}  
     </div>
   )
 }

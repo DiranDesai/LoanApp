@@ -29,8 +29,8 @@ function App() {
 
   useEffect(() => {
     const fetchData = async() => {
-      const {_doc} = await getCurrentUser(token)
-      dispatch({type: UPDATE_PROFILE, payload: _doc})
+      const data = await getCurrentUser(token)
+      dispatch({type: UPDATE_PROFILE, payload: data})
     }
     if (token) {
       fetchData()
