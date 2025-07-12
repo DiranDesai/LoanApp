@@ -36,3 +36,4 @@ backend/dist/
 *.swp
 
 .env
+backend/.env
