@@ -33,7 +33,7 @@ app.use(errorHandler)
 let origin;
 
 if (process.env.NODE_ENV == "production") {
-  origin = "https://loan-backend2.onrender.com";
+  origin = "https://loanapp-8mqf.onrender.com";
 } else {
   origin = "http://localhost:5173";
 }
