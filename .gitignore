@@ -34,3 +34,5 @@ backend/dist/
 .vscode/
 .idea/
 *.swp
+
+.env
